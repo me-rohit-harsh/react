@@ -8,16 +8,18 @@ function ListGroup() {
             <ul className="list-group">
                 <li className="list-group-item">No any item</li>
             </ul> </>
-    }
-    return (
-        <>
-            <ul className="list-group">
-                {citys.map((city, index) => (
-                    <li key={index} className="list-group-item">{city}</li>
-                ))}
-            </ul>
-        </>
+    }else{
+        return (
+            <>
+                <ul className="list-group">
+                    {citys.map((city, index) => (
+                        <li key={index} className="list-group-item">{city}</li>
+                    ))}
+                </ul>
+            </>
 
-    );
+        );
+    }
+   
 }
 export default ListGroup;
